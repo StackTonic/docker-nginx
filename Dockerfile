@@ -1,4 +1,4 @@
-FROM ubuntu/ubuntu:focal
+FROM ubuntu:focal
 
 ARG S6_OVERLAY_VERSION=3.1.0.1
 
