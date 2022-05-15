@@ -1,3 +1,4 @@
+name: Build the Docker Image, Upload to Registry
 on:
   # run it on push to the default repository branch
   push:
@@ -6,7 +7,7 @@ on:
   pull_request:
 
 
-defaults:
+jobs:
   # define job to build and publish docker image
   build-and-push-docker-image:
     name: Build Docker image and push to repositories
