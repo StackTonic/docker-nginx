@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# permissions
+chown -R app:app \
+    /config \
+    /var/lib/nginx \
+    /var/tmp/nginx
+chmod -R g+w \
+    /config/{nginx}
