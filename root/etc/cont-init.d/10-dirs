@@ -2,4 +2,5 @@
 
 # make folders
 mkdir -p \
-    /config/nginx
+    /config/nginx \
+    /var/tmp/nginx
