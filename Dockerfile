@@ -1,4 +1,4 @@
-FROM ghcr.io/stacktonic/ubuntu:latest
+FROM ghcr.io/stacktonic/ubuntu:v0.0.3
 
 RUN apt-get update && \
     apt-add-repository ppa:nginx/stable -y && \
