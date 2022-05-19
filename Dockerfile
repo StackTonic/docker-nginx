@@ -1,12 +1,8 @@
-FROM ghcr.io/stacktonic/ubuntu:v0.0.3
+FROM ghcr.io/stacktonic/alpine:v0.0.1
 
-RUN apt-get update && \
-    apt-add-repository ppa:nginx/stable -y && \
-    apt-get update && \
-    apt-get install -y nginx && \
-    apt-get autoremove -y && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN  apk add --no-cache nginx && \
+     rm -rf /tmp/*
+
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 CMD []
