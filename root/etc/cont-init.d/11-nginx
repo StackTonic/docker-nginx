@@ -5,6 +5,7 @@
     cp -r /etc/nginx/ /config/
     rm -f /config/nginx/nginx.conf
     cp /defaults/nginx/nginx.conf.sample /config/nginx/nginx.conf
+    mkdir /config/nginx/conf.d
 
 [[ ! "$(ls -A /config/nginx/conf.d)" ]]
     cp /defaults/nginx/default.conf.sample /config/nginx/conf.d/default.conf
