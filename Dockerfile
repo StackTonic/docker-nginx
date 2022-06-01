@@ -1,4 +1,4 @@
-FROM ghcr.io/stacktonic/alpine:v0.0.1
+FROM ghcr.io/stacktonic/alpine:v0.0.2
 
 RUN  apk add --no-cache nginx && \
      rm -rf /tmp/*
