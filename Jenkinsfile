@@ -33,7 +33,7 @@ spec:
     environment {
         BASE_IMAGE_NAME="${params.BASE_IMAGE_NAME}"
         BASE_IMAGE_TAG="${params.BASE_IMAGE_TAG}"
-        BASE_REPOSITORY_URL="${params.BASE_IMAGE_URL}"
+        BASE_REPOSITORY_URL="${params.BASE_DOCKER_REGISTRY_URL}"
         IMAGE_NAME="${params.IMAGE_NAME}"
         IMAGE_TAG="${params.IMAGE_TAG}"
         REPOSITORY_URL= 'https://github.com/StackTonic/docker-nginx.git'
