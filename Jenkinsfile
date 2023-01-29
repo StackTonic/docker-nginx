@@ -2,7 +2,7 @@
 pipeline {
 
     parameters {
-        string(name: 'BASE_DOCKER_REGISTRY_URL', defaultValue: 'harbor.stacktonic.com.au/Stacktonic', description: 'Where should I get the base image?')
+        string(name: 'BASE_DOCKER_REGISTRY_URL', defaultValue: 'harbor.stacktonic.com.au', description: 'Where should I get the base image?')
         string(name: 'BASE_IMAGE_NAME', defaultValue: 'stacktonic/alpine', description: 'What is the base image name?')
         string(name: 'BASE_IMAGE_TAG', defaultValue: 'latest', description: 'Do we have a speical base image tag?')
 
